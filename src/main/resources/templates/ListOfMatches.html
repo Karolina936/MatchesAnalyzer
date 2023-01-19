@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<table class="display table table-bordered" style="width:800px">
+  <thead class="text-center">
+  <tr>
+    <th class="text-center">List of results</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="event : ${events}">
+    <td class="text-center"th:text= "${event.propablyResult()}"></td>
+    <td></td>
+  </tr>
+  </tbody>
+
+</table>
+</body>
+</html>
+
