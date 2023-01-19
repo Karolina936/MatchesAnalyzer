@@ -17,7 +17,7 @@ public class MapJasonToObject {
         Events events = new Events();
 
         try{
-            FileReader file = new FileReader("C:\\Users\\karol\\IdeaProjects\\Match2\\src\\main\\resources\\BE_data.json");
+            FileReader file = new FileReader("C:\\Users\\karol\\IdeaProjects\\Match2\\MatchesAnalyzer\\src\\main\\resources\\BE_data.json");
 
             ObjectMapper objectMapper = new ObjectMapper();
             events = objectMapper.readValue(file, Events.class);
