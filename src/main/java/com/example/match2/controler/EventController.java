@@ -36,6 +36,13 @@ public class EventController {
         return "ListUser";
     }
 
+    @GetMapping("/Competitors")
+    public String Competitors(Model model) {
+        List<String> competitors = eventsService.getTeamsNamesAlphabetically();
+        model.addAttribute("competitors", competitors);
+        return "ListOfCompetitors";
+    }
+
 
 
 

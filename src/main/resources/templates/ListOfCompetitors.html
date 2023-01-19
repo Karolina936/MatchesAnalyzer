@@ -4,20 +4,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>ListOfMatches</title>
+  <title>Competitors</title>
 </head>
 <body>
 
 <table class="display table table-bordered" style="width:800px">
   <thead class="text-center">
   <tr>
-    <th class="text-center">List of results</th>
+    <th class="text-center">List of competitors</th>
 
   </tr>
   </thead>
   <tbody>
-  <tr th:each="event : ${events}">
-    <td class="text-center"th:text= "${event.propablyResult()}"></td>
+  <tr th:each="competitor : ${competitors}">
+    <td class="text-center"th:text= "${competitor}"></td>
     <td></td>
   </tr>
   </tbody>
@@ -25,4 +25,3 @@
 </table>
 </body>
 </html>
-
