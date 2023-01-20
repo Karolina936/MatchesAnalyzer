@@ -9,5 +9,7 @@ I used HTML to display the data.
 After starting the program, the start page is displayed, where it is explained how paths should be entered in the browser to display individual views.
 
 10 results of matches – localhost:8080/Result
+
 Different number of results of matches - localhost:8080/{number}
+
 Alphabetically names of competitors -  localhost:8080/Competitors
