@@ -46,7 +46,7 @@ public class Event {
     public String propablyResult() {
         return "Start date: " + this.formatStartDate() + ",\n"
                 + competitors.get(0).toString() + " vs. " + competitors.get(1).toString() + ",\n"
-                + (venue != null ? venue.toString() : "No data about venue!") + ",\n"
+                + (venue != null ? venue.getName() : "No data about venue!") + ",\n"
                 + "Highest probable result: " + this.getResult() +"\n";
     }
 

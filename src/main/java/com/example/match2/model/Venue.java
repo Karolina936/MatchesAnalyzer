@@ -16,8 +16,4 @@ public class Venue {
     private String map_coordinates;
     private String country_code;
 
-    @Override
-    public String toString() {
-        return "Venue: " + name;
-    }
 }
